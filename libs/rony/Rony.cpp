@@ -17,3 +17,7 @@ void Rony::led_enable(int pin, bool en) {
     pinMode(pin, OUTPUT);
     digitalWrite(pin, en);
 }
+
+int Rony::read_temperature() {
+    return (analogRead(TEMPERATURE_PIN) * (5.0 / 1023.0)) * 100.0;
+}
