@@ -28,8 +28,6 @@ public:
 
 private:
   uint8_t _motorDiff = 0;
-
-
 };
 
 #endif  // __MOTOR_H_

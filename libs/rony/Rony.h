@@ -22,6 +22,8 @@
 #define FIRST_POTENC 6
 #define SECOND_POTENC 7
 #define TEMPERATURE_PIN 1
+#define LEFT_SENSOR 28
+#define RIGHT_SENSOR 27
 
 //
 // Leds
@@ -36,14 +38,6 @@
 #include "Sonar.h"
 #include "LineTracker.h"
 #include "WS2812.h"
-
-class Rony { 
-public:
-    void buzz_enable(bool en);
-    int read_potenc(int pin);
-    bool read_btn(int pin);
-    void led_enable(int pin, bool en);
-    int read_temperature();
-};
+#include "Temperature.h"
 
 #endif // __RONY_H_
