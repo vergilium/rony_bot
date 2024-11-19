@@ -1,5 +1,4 @@
 #include "Arduino.h"
-#include "Rony.h"
 #include "Temperature.h"
 
 float Temperature::readTemperatureC() {

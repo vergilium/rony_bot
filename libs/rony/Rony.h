@@ -21,7 +21,6 @@
 #define BLUE_BUTTON 39
 #define FIRST_POTENC 6
 #define SECOND_POTENC 7
-#define TEMPERATURE_PIN 1
 #define LEFT_SENSOR 28
 #define RIGHT_SENSOR 27
 
