@@ -1,4 +1,3 @@
-#include "Arduino.h"
 #include "Temperature.h"
 
 float Temperature::readTemperatureC() {

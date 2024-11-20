@@ -1,6 +1,8 @@
 #ifndef __TEMPERATURE_H_
 #define __TEMPERATURE_H_
 
+#include "Arduino.h"
+
 #define TEMPERATURE_PIN 1
 
 class Temperature {
