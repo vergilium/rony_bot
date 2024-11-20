@@ -14,4 +14,4 @@ class Temperature {
 };
 
 
-#endif
+#endif //__TEMPERATURE_H_
