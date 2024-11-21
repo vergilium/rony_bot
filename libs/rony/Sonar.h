@@ -10,11 +10,13 @@
 #define SONAR_ECHO 25
 #define MAX_DISTANCE 200
 
-class Sonar : public NewPing {
+class Sonar /*: public NewPing*/ {
     public:
-        Sonar() : NewPing(SONAR_ECHO, SONAR_TRIG, MAX_DISTANCE) {}
+        // Sonar() : NewPing(SONAR_ECHO, SONAR_TRIG, MAX_DISTANCE) {}
         int readCm();
         int readIn();
+    private:
+        NewPing _sonar = NewPing(SONAR_ECHO, SONAR_TRIG, MAX_DISTANCE);
 };
 
 

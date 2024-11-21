@@ -18,10 +18,12 @@
 
 #include "Adafruit_NeoPixel.h"
 
-class WS2812 : public Adafruit_NeoPixel {
+class WS2812 /*: public Adafruit_NeoPixel*/ {
     public:
-        WS2812() : Adafruit_NeoPixel(RGB_CNT, RGB_PIN, NEO_GRB + NEO_KHZ800) {begin(); show();}
+        WS2812();
         void setColor(uint8_t r, uint8_t g, uint8_t b, uint8_t index);
+    private:
+        Adafruit_NeoPixel _strip = Adafruit_NeoPixel(RGB_CNT, RGB_PIN, NEO_GRB + NEO_KHZ800);
 };
 
 #endif // __WS2812_H_
